@@ -1,0 +1,5 @@
+com\example\func\RegrasArquivos.class
+module-info.class
+com\example\MainApp.class
+com\example\controller\DashBoardController.class
+com\example\controller\OrganizarController.class

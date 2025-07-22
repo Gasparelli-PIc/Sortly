@@ -15,14 +15,14 @@ public class MainApp extends Application {
     @Override
     public void start(@SuppressWarnings("exports") Stage s) throws IOException {
         stage=s;
-        setRoot("primary","");
+        setRoot("dashboard","Odos");
     }
 
     static void setRoot(String fxml) throws IOException {
         setRoot(fxml,stage.getTitle());
     }
 
-    static void setRoot(String fxml, String title) throws IOException {
+    public static void setRoot(String fxml, String title) throws IOException {
         Scene scene = new Scene(loadFXML(fxml));
         stage.setTitle(title);
         stage.setScene(scene);
@@ -39,5 +39,4 @@ public class MainApp extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-
 }

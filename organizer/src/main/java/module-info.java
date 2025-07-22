@@ -5,6 +5,7 @@ module com.example {
     
     opens com.example to javafx.fxml;
     opens com.example.controller to javafx.fxml;
+    opens com.example.func to javafx.fxml;
 
     exports com.example;
 }

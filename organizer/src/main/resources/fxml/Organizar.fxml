@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPaneFundo" fx:id="AnchorPaneFundoFX" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../styles/Organizar.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.OrganizarController">
+   <children>
+      <TextField id="TextFieldPastaSelect" fx:id="TextFieldPastaSelectFX" editable="false" layoutX="157.0" layoutY="116.0" prefHeight="25.0" prefWidth="580.0" />
+      <Label layoutX="157.0" layoutY="95.0" text="Pasta Selecionada:" textFill="#4a4e54">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="157.0" layoutY="167.0" text="Organizar por:" textFill="#4a4e54">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <AnchorPane id="AnchorPaneData" fx:id="AnchorPaneDataFX" layoutX="157.0" layoutY="188.0" prefHeight="75.0" prefWidth="160.0">
+         <children>
+            <RadioButton id="RadioButtonData" fx:id="radioButtonDataFX" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" text="Data" textFill="#4a4e54" />
+            <Label layoutX="8.0" layoutY="23.0" prefHeight="50.0" prefWidth="143.0" text="Organiza os arquivos em pastas nomeadas por data.               (ano, mês ou dia)" textFill="#8a8a8a" wrapText="true">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane id="AnchorPaneTipo" fx:id="AnchorPaneTipoFX" layoutX="332.0" layoutY="188.0" prefHeight="75.0" prefWidth="160.0">
+         <children>
+            <RadioButton id="RadioButtonTipo" fx:id="radioButtonTipoFX" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" prefWidth="107.0" text="Tipo De Arquivo" textFill="#4a4e54" />
+            <Label layoutX="8.0" layoutY="23.0" prefHeight="50.0" prefWidth="143.0" text="Organiza os arquivos em pastasnomeadas por seu tipo. (imagens, textos, vídeos e etc)" textFill="#8a8a8a" wrapText="true">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane id="AnchorPaneExtencao" fx:id="AnchorPaneExtencaoFX" layoutX="507.0" layoutY="188.0" prefHeight="75.0" prefWidth="160.0">
+         <children>
+            <RadioButton id="RadioButtonExtensao" fx:id="radioButtonExtensaoFX" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" text="Extensão" textFill="#4a4e54" />
+            <Label layoutX="8.0" layoutY="23.0" prefHeight="50.0" prefWidth="143.0" text="Organiza os arquivos nomeadas com sua extinção.(.jpg .txt .py .setup .word e etc)" textFill="#8a8a8a" wrapText="true">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane id="AnchorPaneCustom" fx:id="AnchorPaneCustomFX" layoutX="682.0" layoutY="188.0" prefHeight="75.0" prefWidth="160.0">
+         <children>
+            <RadioButton id="RadioButtonCustom" fx:id="radioButtonCustomFX" disable="true" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" text="Custom" textFill="#4a4e54" />
+            <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="8.0" layoutY="23.0" prefHeight="50.0" prefWidth="143.0" text="breve..." textFill="#8a8a8a" wrapText="true">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Button id="ButtonVoltar" fx:id="ButtonVoltarFX" layoutX="157.0" layoutY="44.0" mnemonicParsing="false" onAction="#voltarMenu" prefHeight="35.0" prefWidth="35.0" text="&lt;">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </Button>
+      <Button id="ButtonSelecionarPasta" fx:id="ButtonSelecionarPastaFX" layoutX="745.0" layoutY="116.0" mnemonicParsing="false" onAction="#selecionarPasta" prefHeight="25.0" prefWidth="97.0" text="Selecionar..." />
+      <Button id="buttonOrganizar" fx:id="buttonOrganizarFX" disable="true" layoutX="155.0" layoutY="300.0" mnemonicParsing="false" onAction="#organizar" prefHeight="50.0" prefWidth="675.0" text="Organizar" />
+      <Label id="labelConcluido" fx:id="labelConcluidoFX" layoutX="399.0" layoutY="388.0" text="CONCLUIDO" visible="false">
+         <font>
+            <Font name="Segoe UI Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

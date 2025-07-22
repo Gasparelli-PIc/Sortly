@@ -1,0 +1,1 @@
+start jlink-image\bin\javaw -jar modules\organizer-1.0-SNAPSHOT.jar

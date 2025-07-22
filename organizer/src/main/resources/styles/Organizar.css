@@ -1,0 +1,30 @@
+/* Panes */
+#AnchorPaneFundo {
+    -fx-background-color: #E8E8E8;
+}
+#AnchorPaneData {
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+#AnchorPaneTipo {
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+#AnchorPaneExtencao {
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+#AnchorPaneCustom {
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+/* Botões */
+#ButtonVoltar {
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+}
