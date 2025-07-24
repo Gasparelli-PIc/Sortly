@@ -91,5 +91,10 @@ public class OrganizarController implements Initializable {
             RegrasArquivos.tipoDeArquivo(caminho);
             labelConcluidoFX.setVisible(true);
         }
+        if (radioButtonExtensaoFX.isSelected()) {
+            String caminho = TextFieldPastaSelectFX.getText();
+            RegrasArquivos.extencao(caminho);
+            labelConcluidoFX.setVisible(true);
+        }
     }
 }
