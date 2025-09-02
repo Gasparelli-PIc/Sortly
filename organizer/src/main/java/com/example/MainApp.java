@@ -15,11 +15,11 @@ public class MainApp extends Application {
     @Override
     public void start(@SuppressWarnings("exports") Stage s) throws IOException {
         stage=s;
-        setRoot("dashboard","Odos");
+        setRoot("dashboard","Sortly");
     }
 
     static void setRoot(String fxml) throws IOException {
-        setRoot(fxml,stage.getTitle());
+        setRoot(fxml, stage.getTitle());
     }
 
     public static void setRoot(String fxml, String title) throws IOException {

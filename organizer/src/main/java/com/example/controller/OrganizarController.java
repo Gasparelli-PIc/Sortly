@@ -33,8 +33,6 @@ public class OrganizarController implements Initializable {
     private ToggleGroup regrasOrganizacaogGroup;
 
     @FXML
-    private RadioButton radioButtonDataFX;
-    @FXML
     private RadioButton radioButtonTipoFX;
     @FXML
     private RadioButton radioButtonExtensaoFX;
@@ -49,7 +47,6 @@ public class OrganizarController implements Initializable {
 
         //Regras de Organizaçao em um grupo 
         regrasOrganizacaogGroup = new ToggleGroup();
-        radioButtonDataFX.setToggleGroup(regrasOrganizacaogGroup);
         radioButtonTipoFX.setToggleGroup(regrasOrganizacaogGroup);
         radioButtonExtensaoFX.setToggleGroup(regrasOrganizacaogGroup);
 

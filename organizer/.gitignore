@@ -1,0 +1,11 @@
+#arquivos de credenciais
+credentials.json
+
+#arquivos de configs locais 
+*.env
+*.log
+.vscode
+
+#diretorios de build
+/target/
+/build/
